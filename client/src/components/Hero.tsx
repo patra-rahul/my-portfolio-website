@@ -13,14 +13,17 @@ const Hero = () => {
             <div className="bg-yellow-600 h-3 w-3 rounded-full"></div>
             <div className="bg-green-600 h-3 w-3 rounded-full"></div>
           </div>
-          <div className="text-lg">
+          <div className="text-lg hidden md:block">
             Welcome to my awesome Portfolio Website !!
+          </div>
+          <div className="text-lg block md:hidden">
+            Welcome !!
           </div>
         </div>
 
         <div className="flex-col items-center justify-center">
           <div className="m-4 p-4">
-            <div className="flex justify-around">
+            <div className="md:flex justify-around">
               <div>
                 <div className="text-9xl text-blue">RAHUL</div>
                 <div className="text-2xl">
@@ -59,7 +62,7 @@ const Hero = () => {
                   </button>
                 </div>
               </div>
-              <div>
+              <div className="hidden md:block">
                 <Asci />
               </div>
             </div>
