@@ -31,10 +31,10 @@ const asciiArt: string = `
 
 const Asci = () => {
   return (
-    <pre>
-        {asciiArt}
-    </pre>
-  )
+    <div className="text-purple">
+      <pre>{asciiArt}</pre>
+    </div>
+  );
 }
 
 export default Asci
