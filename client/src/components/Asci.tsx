@@ -31,7 +31,7 @@ const asciiArt: string = `
 
 const Asci = () => {
   return (
-    <div className="text-purple">
+    <div className="text-purple text-xs tracking-normal">
       <pre>{asciiArt}</pre>
     </div>
   );

@@ -1,6 +1,7 @@
 import { Info } from "lucide-react";
 import { ChevronRight } from "lucide-react";
 import Asci from "./Asci";
+import { SquareArrowOutUpLeft } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -40,15 +41,22 @@ const Hero = () => {
                   patra-rahul
                 </div>
 
-                <div className="text-2xl">~/patra-rahul [main]</div>
+                <div className="text-2xl">~/patra-rahul [He/Him]</div>
                 <div className="flex bg-panel rounded-xl p-2 mt-4  border-border border-2">
                   <ChevronRight className="text-yellow" /> Building Backend & AI
                   systems one commit at a time_
                 </div>
 
-                <div className="mt-4">
-                  <button className="bg-yellow py-2 px-4 rounded-xl text-bg">Book Call</button>
-                  <button>Github</button>
+                <div className="mt-4 space-x-2 flex">
+                  <button className="bg-yellow py-2 px-4 rounded-xl text-bg">
+                    Book Call
+                  </button>
+                  <button className="bg-purple py-2 px-4 rounded-xl text-bg flex gap-2">
+                    Github
+                    <span>
+                      <SquareArrowOutUpLeft />
+                    </span>
+                  </button>
                 </div>
               </div>
               <div>
