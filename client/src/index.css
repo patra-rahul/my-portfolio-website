@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-flicker: flicker 0.03s infinite;
+
+  @keyframes flicker {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
+    }
+  }
+
+  --color-bg: #0b0e14;
+  --color-panel: #161b22;
+  --color-primary-text: #e6edf3;
+  --color-secondary-text: #8b949e;
+  --color-blue: #6fc3e4;
+  --color-yellow: #f2b84b;
+  --color-border: #30363d;
+}
+
+@font-face {
+  font-family: "TerminalFont";
+  src: url("./assets/font/VT323-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: theme(--color-bg);
+  font-family: "TerminalFont", sans-serif;
+}
