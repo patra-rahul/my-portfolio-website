@@ -34,4 +34,5 @@
 body {
   background-color: theme(--color-bg);
   font-family: "TerminalFont", sans-serif;
+  scroll-behavior: smooth;
 }

@@ -1,9 +1,9 @@
 # Project Structure and Planning
 
 ## Components
-- Navbar
-- Hero Section (CRT TV - Terminal Style)
-- About / Profile Section
+- Navbar - Done
+- Hero Section (CRT TV - Terminal Style) - Done
+- About / Profile Section 
 - Tech Stack Section
 - Github Repo Status
 - DSA & System Design Problems Solved Counter
