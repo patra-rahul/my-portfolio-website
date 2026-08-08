@@ -1,12 +1,13 @@
 import { useState } from "react";
 import logo from "../assets/owl.jpg";
 import { SquareMenu } from "lucide-react";
+import { X } from "lucide-react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="p-3 m-4 bg-panel bg-opacity-0.5 rounded-xl">
+    <div className="p-3 m-4 bg-panel/10 bg-opacity-0.5 rounded-xl sticky top-5 z-50 backdrop-blur-xl border border-white/10">
       <ul className="hidden md:flex justify-between items-center text-4xl text-color-panel text-primary-text">
         <li>
           <img
@@ -15,8 +16,8 @@ const Navbar = () => {
             className="h-12 rounded-full object-contain"
           />
         </li>
-        <li>Work</li>
         <li>About</li>
+        <li>Work</li>
         <li>Github</li>
         <li>Activity</li>
         <li className="bg-white px-4 py-2 rounded-lg text-bg">
@@ -39,15 +40,16 @@ const Navbar = () => {
             className="px-4 py-2 rounded-lg text-white"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            <SquareMenu className="h-10 w-10" />
+            {(!menuOpen && <SquareMenu className="h-10 w-10" />) ||
+              (menuOpen && <X className="h-10 w-10" />)}
           </button>
         </li>
       </ul>
 
       {menuOpen && (
         <ul className="flex-col justify-center space-y-2 text-white mt-4 tracking-widest ">
-          <li className="bg-[#262f3b] p-2 rounded-lg">Work</li>
           <li className="bg-[#262f3b] p-2 rounded-lg">About</li>
+          <li className="bg-[#262f3b] p-2 rounded-lg">Work</li>
           <li className="bg-[#262f3b] p-2 rounded-lg">Github</li>
           <li className="bg-[#262f3b] p-2 rounded-lg">Activity</li>
           <li className="bg-white px-4 py-2 rounded-lg text-bg">
