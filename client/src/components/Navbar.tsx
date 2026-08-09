@@ -7,16 +7,23 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="p-3 m-4 bg-panel/10 bg-opacity-0.5 rounded-xl sticky top-5 z-50 backdrop-blur-xl border border-white/10">
+    <div
+      className="p-3 m-4 bg-panel/10 bg-opacity-0.5 rounded-xl sticky top-5 z-50 backdrop-blur-xl border border-white/10"
+      id="Navbar"
+    >
       <ul className="hidden md:flex justify-between items-center text-4xl text-color-panel text-primary-text">
         <li>
-          <img
-            src={logo}
-            alt="inaccessible"
-            className="h-12 rounded-full object-contain"
-          />
+          <a href="#">
+            <img
+              src={logo}
+              alt="inaccessible"
+              className="h-12 rounded-full object-contain"
+            />
+          </a>
         </li>
-        <li>About</li>
+        <li>
+          <a href="#About">About</a>
+        </li>
         <li>Work</li>
         <li>Github</li>
         <li>Activity</li>
@@ -29,11 +36,13 @@ const Navbar = () => {
 
       <ul className="md:hidden flex items-center justify-between">
         <li>
-          <img
-            src={logo}
-            alt="inaccessible"
-            className="h-12 rounded-full object-contain"
-          />
+          <a href="#">
+            <img
+              src={logo}
+              alt="inaccessible"
+              className="h-12 rounded-full object-contain"
+            />
+          </a>
         </li>
         <li>
           <button
@@ -48,7 +57,11 @@ const Navbar = () => {
 
       {menuOpen && (
         <ul className="flex-col justify-center space-y-2 text-white mt-4 tracking-widest ">
-          <li className="bg-[#262f3b] p-2 rounded-lg">About</li>
+          <li className="bg-[#262f3b] p-2 rounded-lg">
+            <a href="#About" onClick={() => setMenuOpen(!menuOpen)}>
+              About
+            </a>
+          </li>
           <li className="bg-[#262f3b] p-2 rounded-lg">Work</li>
           <li className="bg-[#262f3b] p-2 rounded-lg">Github</li>
           <li className="bg-[#262f3b] p-2 rounded-lg">Activity</li>

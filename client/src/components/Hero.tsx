@@ -6,7 +6,7 @@ import { SquareArrowOutUpLeft } from "lucide-react";
 const Hero = () => {
   return (
     <>
-      <div className="tracking-wider  text-white border-1 m-4 border-white/15  rounded-xl h-full">
+      <div className="tracking-wider  text-white border-1 m-4 border-white/15  rounded-xl h-full" id="Hero">
         <div className="h-10 bg-panel rounded-t-xl flex items-center">
           <div className="flex items-center space-x-2 mx-4">
             <div className="bg-red-600 h-3 w-3 rounded-full"></div>

@@ -31,6 +31,9 @@
   font-style: normal;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: theme(--color-bg);
   font-family: "TerminalFont", sans-serif;
