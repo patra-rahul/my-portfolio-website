@@ -25,7 +25,9 @@ const Navbar = () => {
           <a href="#About">About</a>
         </li>
         <li>Work</li>
-        <li>Github</li>
+        <li>
+          <a href="#Github">Github</a>
+        </li>
         <li>Activity</li>
         <li className="bg-white px-4 py-2 rounded-lg text-bg">
           <a href="mailto:contractrahulpatra@gmail.com">
@@ -63,7 +65,11 @@ const Navbar = () => {
             </a>
           </li>
           <li className="bg-[#262f3b] p-2 rounded-lg">Work</li>
-          <li className="bg-[#262f3b] p-2 rounded-lg">Github</li>
+          <li className="bg-[#262f3b] p-2 rounded-lg">
+            <a href="#Github" onClick={() => setMenuOpen(!menuOpen)}>
+              Github
+            </a>
+          </li>
           <li className="bg-[#262f3b] p-2 rounded-lg">Activity</li>
           <li className="bg-white px-4 py-2 rounded-lg text-bg">
             <a href="mailto:contractrahulpatra@gmail.com">
