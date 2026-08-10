@@ -1,4 +1,3 @@
-
 import { GitHubCalendar } from "react-github-calendar";
 
 const Github = () => {
@@ -17,15 +16,38 @@ const Github = () => {
             Where the code lives...
           </h3>
 
+          <p className="hidden md:block mt-2 text-sm text-red-600 animate-flicker">
+            Hover on any date to get more info
+          </p>
+
           <p className="mt-2 text-sm text-secondary-text md:hidden">
-            {"<-"} Scroll left-right to view full calendar {"->"}
+            {"<-"} Scroll left-right to view full calendar {"->"} <br />
+            <span className="text-red-600 animate-flicker">
+              Tap on any grid to get more info
+            </span>
           </p>
         </div>
 
         {/* Calendar */}
         <div className="text-white tracking-wider mt-10 overflow-x-auto max-w-full scrollbar-none">
           <div className="flex min-w-max justify-center px-4">
-            <GitHubCalendar username="patra-rahul" year={new Date().getFullYear()}/>
+            <GitHubCalendar
+              username="patra-rahul"
+              year={new Date().getFullYear()}
+              tooltips={{
+                activity: {
+                  text: ({ level, date }) =>
+                    `${level} activities on ${new Date(date).toLocaleDateString("en-US")}`,
+                  placement: "right",
+                  offset: 6,
+                  hoverRestMs: 300,
+                  transitionStyles: {
+                    duration: 100,
+                  },
+                  withArrow: true,
+                },
+              }}
+            />
           </div>
         </div>
       </div>
@@ -34,4 +56,3 @@ const Github = () => {
 };
 
 export default Github;
-
