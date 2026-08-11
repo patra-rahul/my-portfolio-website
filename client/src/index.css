@@ -31,7 +31,7 @@
   font-style: normal;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -39,7 +39,6 @@ body {
   font-family: "TerminalFont", sans-serif;
   scroll-behavior: smooth;
 }
-
 
 /* Adapt to your needs */
 .react-activity-calendar__tooltip {
@@ -58,12 +57,40 @@ body {
 
   /* Use this instead of a media query - the component theme can be set */
   /* independent of the system color scheme. */
-  &[data-color-scheme='dark'] {
+  &[data-color-scheme="dark"] {
     background-color: hsl(0 0% 94%);
     color: hsl(0 0% 6%);
 
     .react-activity-calendar__tooltip-arrow {
       fill: hsl(0 0% 94%);
     }
+  }
+}
+
+.marquee-section {
+  box-shadow: 0 0 0 1px rgb(111 195 228 / 4%), 0 20px 45px rgb(0 0 0 / 18%);
+}
+
+.marquee-track {
+  animation: marquee-right 28s linear infinite;
+  will-change: transform;
+}
+
+.marquee-section:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
   }
 }
