@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Github from "./components/Github";
 import Marquee from "./components/Marquee";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Marquee />
       <About />
       <Github />
+      <Footer />
     </>
   );
 };
