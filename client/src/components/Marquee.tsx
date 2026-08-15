@@ -4,7 +4,7 @@ const Marquee = () => {
       className="marquee-section relative mx-4 overflow-hidden rounded-xl border border-white/15 bg-bg"
       aria-label="Learning philosophy"
     >
-      <div className="relative flex items-center gap-3 border-b border-white/10 px-5 py-2 text-sm tracking-[0.18em] text-secondary-text">
+      <div className="bg-panel relative flex items-center gap-3 border-b border-white/10 px-5 py-2 text-sm tracking-[0.18em] text-secondary-text">
         <span className="h-2 w-2 rounded-full bg-green shadow-[0_0_12px_#7ee0a8]" />
         <span>node_modules / philosophy.js</span>
         <span className="ml-auto hidden text-yellow sm:block">LIVE EXPORT</span>
