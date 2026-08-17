@@ -20,7 +20,7 @@ import Node from "../assets/icons/Node.svg";
 
 const About = () => {
   return (
-    <div className="bg-bg py-24 sm:py-32" id="About">
+    <div className=" py-24 sm:py-32" id="About">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <h2 className="text-center text-base/7 font-semibold text-purple">
           {" "}
