@@ -42,7 +42,7 @@ const About = () => {
           {/* Right Column Top: Text Card */}
           <div className="relative max-lg:row-start-1">
             <div className="relative flex h-full flex-col overflow-hidden rounded-xl">
-              <div className="bg-panel p-6 h-fit text-white">
+              <div className="bg-bg p-6 h-fit text-white">
                 <span className="text-2xl ">Rahul Patra [Synonyms: Owl] </span>
                 <br />
                 I'm an{" "}
