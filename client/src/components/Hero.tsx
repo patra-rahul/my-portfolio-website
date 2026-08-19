@@ -1,5 +1,6 @@
 import { Phone } from "lucide-react";
 import Linkedin from "../assets/icons/Linkedin.png";
+import Github from '../assets/icons/GitHub.svg'
 
 import HeroImg from "../assets/images/hero.png";
 const Hero = () => {
@@ -27,15 +28,23 @@ const Hero = () => {
           </h1>
         </div>
 
-        <div className="relative flex justify-center">
+        <div className="relative flex justify-center z-20">
           <ul className="absolute top-10 md:top-15 flex whitespace-nowrap leading-none gap-x-2">
             <li className="flex items-center border-blue border w-fit p-2 rounded-lg text-blue gap-x-2">
-              <a href="">LinkedIn</a>
+              <a
+                href="https://www.linkedin.com/in/rahulpatrain"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
               <img src={Linkedin} alt="" className="h-5 w-auto" />
             </li>
 
-            <li className="flex items-center bg-blue w-fit p-2 rounded-lg">
-              Book Call <Phone height={10} />
+            <li className="flex items-center bg-blue w-fit p-2 rounded-lg gap-x-2 text-bg">
+              <a href="https://github.com/patra-rahul" target="_blank">
+                Github
+              </a>
+              <img src={Github} alt="" className="h-5 w-auto" />
             </li>
           </ul>
         </div>
