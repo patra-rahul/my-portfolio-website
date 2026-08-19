@@ -1,4 +1,3 @@
-import { Phone } from "lucide-react";
 import Linkedin from "../assets/icons/Linkedin.png";
 import Github from '../assets/icons/GitHub.svg'
 
