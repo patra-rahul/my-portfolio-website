@@ -30,7 +30,7 @@ const Github = () => {
 
         {/* Calendar */}
         <div className="text-white tracking-wider mt-10 overflow-x-auto max-w-full scrollbar-none">
-          <div className="flex min-w-max justify-center px-4">
+          <div className="flex min-w-max justify-center px-4 py-10">
             <GitHubCalendar
               username="patra-rahul"
               year={new Date().getFullYear()}
