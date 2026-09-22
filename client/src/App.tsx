@@ -4,6 +4,7 @@ import About from "./components/About";
 import Github from "./components/Github";
 import Marquee from "./components/Marquee";
 import Footer from "./components/Footer";
+import AboutV2 from "./components/AboutV2";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Hero />
           <Marquee />
           <About />
+          <AboutV2 />
           <Github />
           < Footer />
         </div>
